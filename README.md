@@ -6,6 +6,7 @@
 - `~/.profile`
 
 ### `nix`
+ - `~/.nixpkgs/darwin-configuration.nix`
 
 ### `ssh`
 - `~/.ssh/config`
