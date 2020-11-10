@@ -1,0 +1,25 @@
+# https://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra
+
+Host usg
+    Hostname 192.168.3.1
+    User mikkelsen
+
+Host usw
+    Hostname 192.168.3.7
+    User mikkelsen
+
+Host uap
+    Hostname 192.168.3.8
+    User mikkelsen
+
+Host pi
+    HostName 192.168.3.20
+    User ubuntu
+
+# Doesn't seem to accept ssh public key
+Host cloudkey
+    Hostname 192.168.3.25
+    User mikkelsen
+
+Host *
+    UseKeychain yes
