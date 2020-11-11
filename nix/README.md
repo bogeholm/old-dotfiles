@@ -43,6 +43,15 @@ nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
 
 # Background
 - [MacOS Nix setup](https://wickedchicken.github.io/post/macos-nix-setup/)
+- [The Manual](https://daiderd.com/nix-darwin/manual/index.html)
 
 # Troubleshooting
-- `darwin-rebuild switch` asks you to source `/etc/static/bashrc`, but this file is not sourceable by `zsh`
+## `zsh` cannot find executables
+**Problem**: `darwin-rebuild switch` asks you to source `/etc/static/bashrc`, but this file is not sourceable by `zsh`
+
+**Solution**: as described in [nix-darwin/tests/programs-zsh.nix](https://github.com/LnL7/nix-darwin/blob/master/tests/programs-zsh.nix), put the following lines in [`darwin-configuration.nix`](`darwin-configuration.nix`):
+
+```bash
+  programs.zsh.enable = true;
+  programs.zsh.enableCompletion = true;
+```
