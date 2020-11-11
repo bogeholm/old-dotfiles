@@ -7,6 +7,7 @@
 
 ### `nix`
  - `~/.nixpkgs/darwin-configuration.nix`
+ - `/etc/static/bashrc`
 
 ### `ssh`
 - `~/.ssh/config`
