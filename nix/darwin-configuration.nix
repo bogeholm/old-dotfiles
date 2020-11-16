@@ -5,6 +5,13 @@
   environment.systemPackages =
     [ pkgs.exa
       pkgs.fd
+      pkgs.gnupg
+      pkgs.hugo
+      pkgs.mosh
+      pkgs.nmap
+      pkgs.nushell
+      pkgs.ripgrep
+      pkgs.starship
     ];
 
   # Auto upgrade nix package and the daemon service.
