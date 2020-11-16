@@ -2,8 +2,9 @@ name: standard
 channels:
   - conda-forge
   - defaults
+  - anaconda
 dependencies:
   - python=3.8
   - anaconda
-  - git
+  - gitpython
   - black
