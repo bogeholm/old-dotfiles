@@ -1,0 +1,27 @@
+[bash_profile]
+source = "${REPO}/bash/bash_profile"
+destination =  "${USER_HOME}/.bash_profile"
+
+[profile]
+source = "${REPO}/bash/profile"
+destination = "${USER_HOME}/.profile"
+
+[nix-darwin-configuration]
+source = "${REPO}/nix/darwin-configuration.nix"
+destination = "${USER_HOME}/.nixpkgs/darwin-configuration.nix"
+
+[ssh-config]
+source = "${REPO}/ssh/config"
+destination = "${USER_HOME}/.ssh/config"
+
+[starship-toml]
+source = "${REPO}/starship/starship.toml"
+destination = "${USER_HOME}/.config/starship.toml"
+
+[zprofile]
+source = "${REPO}/zsh/zprofile"
+destination = "${USER_HOME}/.zprofile"
+
+[zshrc]
+source = "${REPO}/zsh/zshrc"
+destination = "${USER_HOME}/.zshrc"

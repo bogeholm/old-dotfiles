@@ -1,3 +1,0 @@
-bash_profile:
-  - source: ${REPO}/bash/bash_profile
-  - destination: ${USER_HOME}/.bash_profile

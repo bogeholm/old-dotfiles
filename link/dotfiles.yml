@@ -1,0 +1,17 @@
+name: dotfiles
+channels:
+  - conda-forge
+  - defaults
+  - anaconda
+dependencies:
+  - python=3.8
+  # Functionality
+  - dacite
+  - gitpython
+  - toml
+  # Lint, tests and formatting
+  - black
+  - flake8
+  - mypy
+  - pylint
+  - pytest
