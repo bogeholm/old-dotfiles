@@ -1,0 +1,11 @@
+[abc]
+source = "${USER_HOME}/Desktop/dotfiletest/source/abc.txt"
+destination = "${USER_HOME}/Desktop/dotfiletest/target/abc.txt"
+
+[def]
+source = "${USER_HOME}/Desktop/dotfiletest/source/def.txt"
+destination = "${USER_HOME}/Desktop/dotfiletest/target/def.txt"
+
+[ghi]
+source = "${USER_HOME}/Desktop/dotfiletest/source/ghi.txt"
+destination = "${USER_HOME}/Desktop/dotfiletest/other-target/ghi.txt"
