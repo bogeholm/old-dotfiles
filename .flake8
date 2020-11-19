@@ -1,0 +1,3 @@
+[flake8]
+# Comfortable on 13" MacBook Pro in VS Code
+max-line-length = 105

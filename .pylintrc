@@ -1,0 +1,10 @@
+[formatting]
+max-line-length = 105
+
+[MESSAGES CONTROL]
+disable = 
+  import-error,
+  W0511 # Do not report `TODO`
+
+[misc]
+notes=TODO
