@@ -16,3 +16,7 @@ pytest = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+# Black is pre-release @ version 20.8b1 as of this commit
+allow_prereleases = true
