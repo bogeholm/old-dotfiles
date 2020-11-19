@@ -7,3 +7,5 @@ dependencies:
   - python=3.8
   - anaconda
   - black
+  # tensorflow_macos from GitHub
+  # PyTorch
