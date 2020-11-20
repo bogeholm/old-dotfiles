@@ -7,8 +7,8 @@ black . --line-length 105
 
 flake8
 
-mypy --config-file=mypy.ini sync/
+mypy --config-file=mypy.ini sync/ tests/
 
-pylint sync/
+pylint sync/ #tests/
 
 python -m pytest

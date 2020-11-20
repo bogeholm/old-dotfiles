@@ -24,23 +24,23 @@ def timestamp() -> str:
     return datetime.now().strftime(DATETIME_FORMAT)
 
 
-def backup_target_file_if_exists(target: Path) -> None:
-    """If target exists, and is not a symlink, back it up as:
+def backup_destination_file_if_exists(destination: Path) -> None:
+    """If destination exists, and is not a symlink, back it up as:
     `f"{filename}.{timestamp()}.{BACKUP_SUFFIX}`
     """
     # TODO: Return enum representing backup status
 
-    if not target.exists():
+    if not destination.exists():
         return
 
-    if target.is_symlink():
+    if destination.is_symlink():
         return
 
-    if target.is_file():
-        new_target_name = f"{target.name}.{timestamp()}.{BACKUP_SUFFIX}"
-        new_target = target.parent / new_target_name
-        # Disregard unlikely case of target already existing - if so, we'll make it somehow.
-        target.replace(new_target)
+    if destination.is_file():
+        new_destination_name = f"{destination.name}.{timestamp()}.{BACKUP_SUFFIX}"
+        new_destination = destination.parent / new_destination_name
+        # Disregard unlikely case of destination already existing - if so, we'll make it somehow.
+        destination.replace(new_destination)
 
 
 def expand_path(path_template: str) -> Path:
@@ -68,7 +68,7 @@ class PathMap:
         # Ensure destination parent directory exists
         self.destination.parent.mkdir(parents=True, exist_ok=True)
         # Backup existing files if needed
-        backup_target_file_if_exists(self.destination)
+        backup_destination_file_if_exists(self.destination)
         # Remove destination if it is a symlink
         if self.destination.is_symlink():
             self.destination.unlink()
