@@ -28,7 +28,6 @@ def backup_destination_file_if_exists(destination: Path) -> None:
     """If destination exists, and is not a symlink, back it up as:
     `f"{filename}.{timestamp()}.{BACKUP_SUFFIX}`
     """
-    # TODO: Return enum representing backup status
 
     if not destination.exists():
         return
@@ -61,7 +60,6 @@ class PathMap:
 
     def link(self) -> None:
         """Create symlink from self.source to self.destination."""
-        # TODO: Return enum representing sync status
         if not self.source.exists():
             return
 
@@ -94,6 +92,4 @@ if __name__ == "__main__":
     for title, pathmap in res.items():
         print(title)
         print(pathmap)
-        # print(pathmap.destination.parent)
-        # print()
         pathmap.link()
