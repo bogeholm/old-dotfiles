@@ -16,4 +16,6 @@ darwin-rebuild changelog # Verbose
 
 # LaTeX
 # https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution
-tlmgr update --self --all --reinstall-forcibly-removed
+# REQUIRES sudo !!!
+tlmgr update --self
+tlmgr update --all # --reinstall-forcibly-removed
