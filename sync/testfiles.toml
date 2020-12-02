@@ -1,11 +1,27 @@
-[abc]
-source = "${USER_HOME}/Desktop/dotfiletest/source/abc.txt"
-destination = "${USER_HOME}/Desktop/dotfiletest/target/abc.txt"
+[bash_profile]
+source = "${REPO}/bash/bash_profile"
+destination =  "${USER_HOME}/Desktop/dotfiletest/bash_profile"
 
-[def]
-source = "${USER_HOME}/Desktop/dotfiletest/source/def.txt"
-destination = "${USER_HOME}/Desktop/dotfiletest/target/def.txt"
+[profile]
+source = "${REPO}/bash/profile"
+destination = "${USER_HOME}/Desktop/dotfiletest/profile"
 
-[ghi]
-source = "${USER_HOME}/Desktop/dotfiletest/source/ghi.txt"
-destination = "${USER_HOME}/Desktop/dotfiletest/other-target/ghi.txt"
+[nix-darwin-configuration]
+source = "${REPO}/nix/darwin-configuration.nix"
+destination = "${USER_HOME}/Desktop/dotfiletest/nixpkgs/darwin-configuration.nix"
+
+[ssh-config]
+source = "${REPO}/ssh/config"
+destination = "${USER_HOME}/Desktop/dotfiletest/ssh/config"
+
+[starship-toml]
+source = "${REPO}/starship/starship.toml"
+destination = "${USER_HOME}/Desktop/dotfiletest/config/starship.toml"
+
+[zprofile]
+source = "${REPO}/zsh/zprofile"
+destination = "${USER_HOME}/Desktop/dotfiletest/zprofile"
+
+[zshrc]
+source = "${REPO}/zsh/zshrc"
+destination = "${USER_HOME}/Desktop/dotfiletest/zshrc"
