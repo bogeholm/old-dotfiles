@@ -5,6 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict
 
+import argparse
 import git
 import toml
 
@@ -81,15 +82,52 @@ class PathMap:
         return f"{self.__class__.__name__}(source='{self.source}', destination='{self.destination}')"
 
 
+# Colors
+GREEN = "\033[1;32m"
+BLUE = "\033[1;34m"
+MAGENTA = "\033[1;35m"
+NOFMT = "\033[0m"
+
+
+def print_header(s: str) -> None:
+    """Make a header and print"""
+    print(BLUE + "[" + s + "]" + NOFMT)
+
+
+def print_pathmap_link_action(pathmap: PathMap) -> None:
+    """Print the action taken by pathmap.link()"""
+    print(
+        "Linking "
+        + GREEN
+        + str(pathmap.source)
+        + NOFMT
+        + " -> "
+        + MAGENTA
+        + str(pathmap.destination)
+        + NOFMT
+    )
+
+
 if __name__ == "__main__":
-    file_list = toml.load(Path(__file__).parent / "testfiles.toml")
+    parser = argparse.ArgumentParser(
+        description="Link dotfiles to this repo and make backups of old files."
+    )
+    parser.add_argument(
+        "--dotfile-list",
+        nargs="?",
+        default="testfiles.toml",
+        const="testfiles.toml",
+        help="List of source and destination dotfiles to process (TOML format).",
+    )
+
+    cli_args = parser.parse_args()
+    file_list = toml.load(Path(__file__).parent / cli_args.dotfile_list)
 
     res = OrderedDict()
     for title, paths in file_list.items():
         res[title] = PathMap(**paths)
 
-    print(timestamp())
     for title, pathmap in res.items():
-        print(title)
-        print(pathmap)
+        print_header(title)
+        print_pathmap_link_action(pathmap)
         pathmap.link()

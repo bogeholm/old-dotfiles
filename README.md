@@ -19,7 +19,7 @@ git clone git@github.com:bogeholm/dotfiles.git
 ```bash
 cd dotfiles/sync
 pipenv install && pipenv shell
-python sync.py --config "dotfiles.toml"
+python sync.py --dotfile-list "dotfiles.toml"
 ```
 
 # `dotfiles` overview
