@@ -3,23 +3,26 @@
 Host usg
     Hostname 192.168.3.1
     User mikkelsen
+    IdentityFile ~/.ssh/id_rsa_unifi
 
 Host usw
-    Hostname 192.168.3.7
+    Hostname 192.168.3.55
     User mikkelsen
+    IdentityFile ~/.ssh/id_rsa_unifi
 
 Host uap
-    Hostname 192.168.3.8
+    Hostname 192.168.3.9
     User mikkelsen
-
-Host pi
-    HostName 192.168.3.20
-    User ubuntu
+    IdentityFile ~/.ssh/id_rsa_unifi
 
 # Doesn't seem to accept ssh public key
 Host cloudkey
     Hostname 192.168.3.25
     User mikkelsen
+
+Host pi
+    HostName 192.168.3.20
+    User ubuntu
 
 Host *
     UseKeychain yes
