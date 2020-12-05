@@ -13,9 +13,3 @@ rustup update stable
 # https://github.com/LnL7/nix-darwin#updating
 nix-channel --update darwin
 darwin-rebuild changelog # Verbose
-
-# LaTeX
-# https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution
-# REQUIRES sudo !!!
-tlmgr update --self
-tlmgr update --all # --reinstall-forcibly-removed

@@ -1,2 +1,13 @@
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/usr/local/texlive/2020/bin/x86_64-darwin:$PATH"
+# https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout
+# This file is read at login
+
+append_path_if_exists() {
+    if [ -d "${1}" ]; then
+        export PATH="${1}:${PATH}"
+    fi
+}
+
+append_path_if_exists "$HOME/.cargo/bin"
+append_path_if_exists "/usr/local/texlive/2020/bin/x86_64-darwin"
+append_path_if_exists "$HOME/bin"
+append_path_if_exists "/Applications/Julia-1.5.app/Contents/Resources/julia/bin"

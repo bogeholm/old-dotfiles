@@ -1,10 +1,19 @@
-# Nix - added by bogeholm
+# https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout
+# This file is for configuring interactive sessions
 
-if [ -e /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh; fi
-# End Nix
+# >>> Nix >>>
+if [ -e /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh ]; then 
+    . /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh; 
+fi
+# <<< Nix <<<
 
-# Starship - added by bogeholm
-eval "$(starship init zsh)"
+
+# >>> Starship >>>
+if $(which starship > /dev/null 2>&1); then
+    eval "$(starship init zsh)"
+fi
+# <<< Starship <<<
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

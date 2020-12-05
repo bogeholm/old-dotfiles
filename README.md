@@ -25,23 +25,21 @@ python sync.py --dotfile-list "dotfiles.toml"
 # `dotfiles` overview
 
 ## `bash`
-- `~/.bash_profile`
-- `~/.profile`
+- [`~/.bash_profile`](bash/bash_profile)
+- [`~/.profile`](bash/profile)
 
 ## `nix`
- - `~/.nixpkgs/darwin-configuration.nix`
- - `/etc/static/bashrc`
+ - [`~/.nixpkgs/darwin-configuration.nix`](nix/darwin-configuration.nix)
 
 ## `ssh`
-- `~/.ssh/config`
+- [`~/.ssh/config`](ssh/config)
 
 ## `starship`
-- `~/.config/starship.toml`
-
+- [`~/.config/starship.toml`](starship/toml)
 
 ## `zsh`
-- `~/.zprofile`
-- `~/.zshrc`
+- [`~/.zprofile`](zsh/zprofile)
+- [`~/.zshrc`](zsh/zshrc)
 
 # Acknowledgements
 - [@necolas](https://github.com/necolas/dotfiles) | [dotfiles](https://github.com/necolas/dotfiles)

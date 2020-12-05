@@ -1,1 +1,13 @@
-export PATH="$HOME/.cargo/bin:$PATH"
+# Figure out if `~/.profile` is actually read
+# https://apple.stackexchange.com/questions/51036/what-is-the-difference-between-bash-profile-and-bashrc
+
+append_path_if_exists() {
+    if [ -d "${1}" ]; then
+        export PATH="${1}:${PATH}"
+    fi
+}
+
+append_path_if_exists "$HOME/.cargo/bin"
+append_path_if_exists "/usr/local/texlive/2020/bin/x86_64-darwin"
+append_path_if_exists "$HOME/bin"
+append_path_if_exists "/Applications/Julia-1.5.app/Contents/Resources/julia/bin"

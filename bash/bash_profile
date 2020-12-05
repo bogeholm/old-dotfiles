@@ -1,3 +1,15 @@
+# >>> Nix >>>
+if [ -e /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh ]; then 
+    . /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh; 
+fi
+# <<< Nix <<<
+
+
+# >>> Starship >>>
+if $(which starship > /dev/null 2>&1); then
+    eval "$(starship init bash)"
+fi
+# <<< Starship <<<
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -13,5 +25,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-if [ -e /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/bogeholm/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
