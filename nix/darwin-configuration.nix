@@ -7,6 +7,7 @@
       pkgs.fd
       pkgs.gnupg
       pkgs.hugo
+      pkgs.mdbook
       pkgs.mosh
       pkgs.nmap
       pkgs.nushell
