@@ -15,10 +15,11 @@ Host uap
     User mikkelsen
     IdentityFile ~/.ssh/id_rsa_unifi
 
-# Doesn't seem to accept ssh public key
+# Append key to `/root/.ssh/authorized_keys` manually
 Host cloudkey
     Hostname 192.168.3.25
     User mikkelsen
+    IdentityFile ~/.ssh/id_rsa_unifi
 
 Host pi
     HostName 192.168.3.20
