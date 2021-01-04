@@ -22,7 +22,7 @@ Host cloudkey
     IdentityFile ~/.ssh/id_rsa_unifi
 
 Host pi
-    HostName 192.168.3.20
+    HostName 192.168.9.20
     User ubuntu
 
 Host *
