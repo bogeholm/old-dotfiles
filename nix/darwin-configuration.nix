@@ -7,12 +7,14 @@
       pkgs.fd
       pkgs.gnupg
       pkgs.hugo
+      pkgs.knot-resolver
       pkgs.mdbook
       pkgs.mosh
       pkgs.nmap
       pkgs.nushell
       pkgs.ripgrep
       pkgs.starship
+      pkgs.telnet
     ];
 
   # Auto upgrade nix package and the daemon service.
