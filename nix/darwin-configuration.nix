@@ -7,6 +7,7 @@
       pkgs.fd
       pkgs.gnupg
       pkgs.hugo
+      pkgs.jq
       pkgs.knot-resolver
       pkgs.mdbook
       pkgs.mosh
