@@ -6,6 +6,10 @@ destination =  "${USER_HOME}/.bash_profile"
 source = "${REPO}/bash/profile"
 destination = "${USER_HOME}/.profile"
 
+[gitconfig]
+source = "${REPO}/git/gitconfig"
+destination = "${USER_HOME}/.gitconfig"
+
 [nix-darwin-configuration]
 source = "${REPO}/nix/darwin-configuration.nix"
 destination = "${USER_HOME}/.nixpkgs/darwin-configuration.nix"

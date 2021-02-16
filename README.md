@@ -28,6 +28,9 @@ python sync.py --dotfile-list "dotfiles.toml"
 - [`~/.bash_profile`](bash/bash_profile)
 - [`~/.profile`](bash/profile)
 
+# `git`
+[`~/.gitconfig`](git/gitconfig)
+
 ## `nix`
  - [`~/.nixpkgs/darwin-configuration.nix`](nix/darwin-configuration.nix)
 
@@ -35,7 +38,7 @@ python sync.py --dotfile-list "dotfiles.toml"
 - [`~/.ssh/config`](ssh/config)
 
 ## `starship`
-- [`~/.config/starship.toml`](starship/toml)
+- [`~/.config/starship.toml`](starship/starship.toml)
 
 ## `zsh`
 - [`~/.zprofile`](zsh/zprofile)
