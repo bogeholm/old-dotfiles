@@ -9,3 +9,5 @@
         required = true
 [core]
         editor = vim
+[commit]
+	gpgsign = true
