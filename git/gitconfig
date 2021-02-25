@@ -1,6 +1,7 @@
 [user]
         email = troelsmikkelsen@gmail.com
         name = bogeholm
+	signingkey = 6E220912DD124D95
 [filter "lfs"]
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
