@@ -16,7 +16,7 @@ rustup update stable
 # Nix
 # https://github.com/LnL7/nix-darwin#updating
 # darwin-rebuild switch <- requires password, but is required when new packages are added
-info "Updating Rust"
+info "Updating Nix"
 nix-channel --update darwin
 darwin-rebuild changelog
 nix-store --gc
