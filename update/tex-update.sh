@@ -1,4 +1,4 @@
-#! /bin/zsh
+#! /usr/bin/env zsh
 set -x
 
 append_path_if_exists() {
