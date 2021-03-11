@@ -7,12 +7,13 @@
       pkgs.fd
       pkgs.gnupg
       pkgs.hugo
+      pkgs.imagemagick7
       pkgs.jq
-      pkgs.knot-resolver
       pkgs.mdbook
-      pkgs.mosh
       pkgs.nmap
       pkgs.nushell
+      pkgs.poppler
+      pkgs.poppler_utils
       pkgs.ripgrep
       pkgs.starship
       pkgs.telnet
