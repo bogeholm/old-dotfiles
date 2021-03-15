@@ -1,8 +1,6 @@
 #! /usr/bin/env zsh
 source logging.sh
 
-set -x
-
 # Conda
 info "Updating Anaconda"
 conda update -n base -c defaults conda --yes
