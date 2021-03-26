@@ -6,7 +6,7 @@ Host usg
     IdentityFile ~/.ssh/id_rsa_unifi
 
 Host usw
-    Hostname 192.168.3.55
+    Hostname 192.168.3.7
     User mikkelsen
     IdentityFile ~/.ssh/id_rsa_unifi
 
