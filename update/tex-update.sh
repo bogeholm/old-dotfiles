@@ -1,5 +1,4 @@
 #! /usr/bin/env zsh
-set -x
 
 append_path_if_exists() {
     if [ -d "${1}" ]; then
