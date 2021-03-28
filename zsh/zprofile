@@ -10,4 +10,4 @@ append_path_if_exists() {
 append_path_if_exists "$HOME/.cargo/bin"
 append_path_if_exists "/usr/local/texlive/2020/bin/x86_64-darwin"
 append_path_if_exists "$HOME/bin"
-append_path_if_exists "/Applications/Julia-1.5.app/Contents/Resources/julia/bin"
+append_path_if_exists "/Applications/Julia-1.6.app/Contents/Resources/julia/bin"
