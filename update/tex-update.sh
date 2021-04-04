@@ -6,7 +6,7 @@ append_path_if_exists() {
     fi
 }
 
-append_path_if_exists "/usr/local/texlive/2020/bin/x86_64-darwin"
+append_path_if_exists "/usr/local/texlive/2021/bin/universal-darwin"
 
 # LaTeX - requires sudo
 # https://tex.stackexchange.com/questions/55437/how-do-i-update-my-tex-distribution
