@@ -14,6 +14,7 @@
       pkgs.nushell
       pkgs.poppler
       pkgs.poppler_utils
+      pkgs.python39Packages.pipx
       pkgs.ripgrep
       pkgs.starship
       pkgs.telnet
