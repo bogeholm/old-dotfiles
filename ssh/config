@@ -15,14 +15,23 @@ Host uap
     User mikkelsen
     IdentityFile ~/.ssh/id_rsa_unifi
 
+Host u6
+    Hostname 192.168.3.88
+    User mikkelsen
+    IdentityFile ~/.ssh/id_rsa_unifi
+
 # Append key to `/root/.ssh/authorized_keys` manually
 Host cloudkey
     Hostname 192.168.3.25
     User mikkelsen
     IdentityFile ~/.ssh/id_rsa_unifi
 
-Host pi
+Host pi3
     HostName 192.168.9.20
+    User ubuntu
+
+Host pi4
+    HostName 192.168.3.30
     User ubuntu
 
 Host *
