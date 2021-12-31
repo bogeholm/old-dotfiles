@@ -11,3 +11,6 @@ append_path_if_exists "$HOME/.cargo/bin"
 append_path_if_exists "/usr/local/texlive/2021/bin/universal-darwin"
 append_path_if_exists "$HOME/bin"
 append_path_if_exists "/Applications/Julia-1.6.app/Contents/Resources/julia/bin"
+
+# Created by `userpath` on 2021-12-31 12:54:40
+export PATH="$PATH:/Users/bogeholm/.local/bin"

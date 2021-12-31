@@ -29,3 +29,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# Created by `userpath` on 2021-12-31 12:54:40
+export PATH="$PATH:/Users/bogeholm/.local/bin"
