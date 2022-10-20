@@ -29,14 +29,12 @@ Host cloudkey
 Host pi3
     HostName 192.168.9.20
     User ubuntu
-
-Host pi4-ether
-    HostName 192.168.3.30
-    User ubuntu
+    IdentityFile ~/.ssh/id_ed25519
 
 Host pi4
     HostName 192.168.3.90
     User ubuntu
+    IdentityFile ~/.ssh/id_ed25519
 
 Host *
     UseKeychain yes
